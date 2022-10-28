@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Memorama</string>
     <string name="texto1">HOLA CHICO</string>
+    <string name="img1">img1</string>
 </resources>
