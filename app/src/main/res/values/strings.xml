@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">Memorama</string>
     <string name="texto1">HOLA CHICO</string>
-    <string name="img1">img1</string>
+    <string name="img0">Carriola</string>
+    <string name="img1">Deck</string>
+    <string name="img2">Station</string>
+    <string name="img3">Transportation</string>
+    <string name="img4">Deck</string>
+    <string name="img5">Deck</string>
+    <string name="img6">Deck</string>
+    <string name="img7">Deck</string>
+    <string name="img0Rota">Broken</string>
+    <string name="img1Rota">Broken</string>
+    <string name="img2Rota">Broken</string>
+    <string name="img3Rota">Broken</string>
+    <string name="img4Rota">Broken</string>
+    <string name="img5Rota">Broken</string>
+    <string name="img6Rota">Broken</string>
+    <string name="img7Rota">Broken</string>
+
 </resources>

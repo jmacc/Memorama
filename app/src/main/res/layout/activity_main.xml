@@ -16,13 +16,14 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_carriola"
             android:tag="0"
-            android:contentDescription="@string/img1" />
+            android:contentDescription="@string/img0" />
         <ImageView
             android:id="@+id/img0Rota"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_broken"
             android:tag="0"
+            android:contentDescription="@string/img0Rota"
             />
     </FrameLayout>
     <FrameLayout>
@@ -32,6 +33,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_carriola"
             android:tag="1"
+            android:contentDescription="@string/img1"
             />
 
         <ImageView
@@ -39,7 +41,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/ic_broken"
-            android:tag="1" />
+            android:tag="1"
+            android:contentDescription="@string/img1Rota"
+            />
     </FrameLayout>
 </TableRow>
 
@@ -51,6 +55,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_carriola"
                 android:tag="2"
+                android:contentDescription="@string/img2"
                 />
             <ImageView
                 android:id="@+id/img2Rota"
@@ -58,8 +63,31 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_broken"
                 android:tag="2"
+                android:contentDescription="@string/img2Rota"
                 />
         </FrameLayout>
+        <FrameLayout>
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_carriola"
+                android:tag="3"
+                android:contentDescription="@string/img3"
+                />
+            <ImageView
+                android:id="@+id/img3Rota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_broken"
+                android:tag="3"
+                android:contentDescription="@string/img3Rota"
+                />
+        </FrameLayout>
+
+    </TableRow>
+
+    <TableRow>
         <FrameLayout>
             <ImageView
                 android:id="@+id/img4"
@@ -67,6 +95,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_carriola"
                 android:tag="4"
+                android:contentDescription="@string/img4"
                 />
             <ImageView
                 android:id="@+id/img4Rota"
@@ -74,12 +103,9 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_broken"
                 android:tag="4"
+                android:contentDescription="@string/img4Rota"
                 />
         </FrameLayout>
-
-    </TableRow>
-
-    <TableRow>
         <FrameLayout>
             <ImageView
                 android:id="@+id/img5"
@@ -87,6 +113,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_carriola"
                 android:tag="5"
+                android:contentDescription="@string/img5"
                 />
             <ImageView
                 android:id="@+id/img5Rota"
@@ -94,22 +121,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_broken"
                 android:tag="5"
-                />
-        </FrameLayout>
-        <FrameLayout>
-            <ImageView
-                android:id="@+id/img6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="6"
-                />
-            <ImageView
-                android:id="@+id/img6Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="6"
+                android:contentDescription="@string/img5Rota"
                 />
         </FrameLayout>
 
@@ -119,11 +131,30 @@
     <TableRow>
         <FrameLayout>
             <ImageView
+                android:id="@+id/img6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_carriola"
+                android:tag="6"
+                android:contentDescription="@string/img6"
+                />
+            <ImageView
+                android:id="@+id/img6Rota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_broken"
+                android:tag="6"
+                android:contentDescription="@string/img6Rota"
+                />
+        </FrameLayout>
+        <FrameLayout>
+            <ImageView
                 android:id="@+id/img7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_carriola"
                 android:tag="7"
+                android:contentDescription="@string/img7"
                 />
             <ImageView
                 android:id="@+id/img7Rota"
@@ -131,22 +162,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_broken"
                 android:tag="7"
-                />
-        </FrameLayout>
-        <FrameLayout>
-            <ImageView
-                android:id="@+id/img8"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="8"
-                />
-            <ImageView
-                android:id="@+id/img8Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="8"
+                android:contentDescription="@string/img7Rota"
                 />
         </FrameLayout>
 
