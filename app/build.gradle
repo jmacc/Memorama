@@ -6,6 +6,10 @@ plugins {
 android {
     compileSdk 32
 
+    viewBinding{
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.tianalytics.memorama"
         minSdk 26
