@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity() {
 				}
 			}
 		/**
-		 * agregar imagenes al view
+		 * add images to view
 		 */
 		listaImageView[posiciones].setImageResource(idDrawable)
 		val objetoImagen = Imagen().apply { this.id_vector = idDrawable }
@@ -132,4 +132,75 @@ class MainActivity : AppCompatActivity() {
 		listaClaseImagen[posiciones] = objetoImagen
 	}
 }
+
+	private fun procesarImagen(imagenView: View){
+		var posicionSeleccionada: Int = imagenView.tag.toString().toInt()
+		var id:String =imagenView.resources.getResourceEntryName(imagenView.id)
+		/**
+		 * Show images on click
+		 */
+		if(imagenView is ImageView){
+			when (id){
+				"img0Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img1Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img2Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img3Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img4Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img5Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img6Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img7Rota" -> {
+					mostrarOcultarImagen(posicionSelecionada,true)
+				}
+				"img0" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img1" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img2" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img3" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img4" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img5" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img6" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+				"img7" -> {
+					mostrarOcultarImagen(posicionSelecionada,false)
+				}
+			}
+		}
+	}
+
+	fun mostrarOcultarImagen(posicion:Int,mostrar:Bolean){
+		if (mostrar){
+			listaImageViewRotas[i].visibility = View.VISIBLE
+			listaImageView[i].visibility = View.INVISIBLE
+		}
+		else{
+			listaImageViewRotas[i].visibility = View.INVISIBLE
+			listaImageView[i].visibility = View.VISIBLE
+		}
+	}
 }

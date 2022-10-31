@@ -24,7 +24,7 @@
             android:src="@drawable/ic_broken"
             android:tag="0"
             android:contentDescription="@string/img0Rota"
-            />
+            android:onClick="procesarImagen"/>
     </FrameLayout>
     <FrameLayout>
         <ImageView
@@ -43,7 +43,7 @@
             android:src="@drawable/ic_broken"
             android:tag="1"
             android:contentDescription="@string/img1Rota"
-            />
+            android:onClick="procesarImagen"/>
     </FrameLayout>
 </TableRow>
 
@@ -64,7 +64,7 @@
                 android:src="@drawable/ic_broken"
                 android:tag="2"
                 android:contentDescription="@string/img2Rota"
-                />
+                android:onClick="procesarImagen"/>
         </FrameLayout>
         <FrameLayout>
             <ImageView
@@ -82,7 +82,7 @@
                 android:src="@drawable/ic_broken"
                 android:tag="3"
                 android:contentDescription="@string/img3Rota"
-                />
+                android:onClick="procesarImagen"/>
         </FrameLayout>
 
     </TableRow>
@@ -104,7 +104,7 @@
                 android:src="@drawable/ic_broken"
                 android:tag="4"
                 android:contentDescription="@string/img4Rota"
-                />
+                android:onClick="procesarImagen"/>
         </FrameLayout>
         <FrameLayout>
             <ImageView
@@ -122,7 +122,7 @@
                 android:src="@drawable/ic_broken"
                 android:tag="5"
                 android:contentDescription="@string/img5Rota"
-                />
+                android:onClick="procesarImagen"/>
         </FrameLayout>
 
     </TableRow>
@@ -145,7 +145,7 @@
                 android:src="@drawable/ic_broken"
                 android:tag="6"
                 android:contentDescription="@string/img6Rota"
-                />
+                android:onClick="procesarImagen"/>
         </FrameLayout>
         <FrameLayout>
             <ImageView
@@ -163,7 +163,7 @@
                 android:src="@drawable/ic_broken"
                 android:tag="7"
                 android:contentDescription="@string/img7Rota"
-                />
+                android:onClick="procesarImagen"/>
         </FrameLayout>
 
     </TableRow>
