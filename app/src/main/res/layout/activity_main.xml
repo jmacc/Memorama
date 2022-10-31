@@ -8,164 +8,189 @@
     android:stretchColumns="*"
     tools:context=".MainActivity">
 
-<TableRow>
-    <FrameLayout>
-        <ImageView
-            android:id="@+id/img0"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_carriola"
-            android:tag="0"
-            android:contentDescription="@string/img0" />
-        <ImageView
-            android:id="@+id/img0Rota"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_broken"
-            android:tag="0"
-            android:contentDescription="@string/img0Rota"
-            android:onClick="procesarImagen"/>
-    </FrameLayout>
-    <FrameLayout>
-        <ImageView
-            android:id="@+id/img1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_carriola"
-            android:tag="1"
-            android:contentDescription="@string/img1"
-            />
+    <TableRow>
 
-        <ImageView
-            android:id="@+id/img1Rota"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_broken"
-            android:tag="1"
-            android:contentDescription="@string/img1Rota"
-            android:onClick="procesarImagen"/>
-    </FrameLayout>
-</TableRow>
+        <FrameLayout>
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/img0"
+                android:src="@drawable/ic_carriola"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/img0Rota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/img0Rota"
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="0" />
+        </FrameLayout>
+
+        <FrameLayout>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/img1"
+                android:src="@drawable/ic_carriola"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/img1Rota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/img1Rota"
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="1" />
+        </FrameLayout>
+    </TableRow>
 
     <TableRow>
+
         <FrameLayout>
+
             <ImageView
                 android:id="@+id/img2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="2"
                 android:contentDescription="@string/img2"
-                />
+                android:src="@drawable/ic_carriola"
+                android:tag="2" />
+
             <ImageView
                 android:id="@+id/img2Rota"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="2"
                 android:contentDescription="@string/img2Rota"
-                android:onClick="procesarImagen"/>
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="2" />
         </FrameLayout>
+
         <FrameLayout>
+
             <ImageView
                 android:id="@+id/img3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="3"
                 android:contentDescription="@string/img3"
-                />
+                android:src="@drawable/ic_carriola"
+                android:tag="3" />
+
             <ImageView
                 android:id="@+id/img3Rota"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="3"
                 android:contentDescription="@string/img3Rota"
-                android:onClick="procesarImagen"/>
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="3" />
         </FrameLayout>
 
     </TableRow>
 
     <TableRow>
+
         <FrameLayout>
+
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="4"
                 android:contentDescription="@string/img4"
-                />
+                android:src="@drawable/ic_carriola"
+                android:tag="4" />
+
             <ImageView
                 android:id="@+id/img4Rota"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="4"
                 android:contentDescription="@string/img4Rota"
-                android:onClick="procesarImagen"/>
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="4" />
         </FrameLayout>
+
         <FrameLayout>
+
             <ImageView
                 android:id="@+id/img5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="5"
                 android:contentDescription="@string/img5"
-                />
+                android:src="@drawable/ic_carriola"
+                android:tag="5" />
+
             <ImageView
                 android:id="@+id/img5Rota"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="5"
                 android:contentDescription="@string/img5Rota"
-                android:onClick="procesarImagen"/>
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="5" />
         </FrameLayout>
 
     </TableRow>
 
-
     <TableRow>
+
         <FrameLayout>
+
             <ImageView
                 android:id="@+id/img6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="6"
                 android:contentDescription="@string/img6"
-                />
+                android:src="@drawable/ic_carriola"
+                android:tag="6" />
+
             <ImageView
                 android:id="@+id/img6Rota"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="6"
                 android:contentDescription="@string/img6Rota"
-                android:onClick="procesarImagen"/>
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="6" />
         </FrameLayout>
+
         <FrameLayout>
+
             <ImageView
                 android:id="@+id/img7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_carriola"
-                android:tag="7"
                 android:contentDescription="@string/img7"
-                />
+                android:src="@drawable/ic_carriola"
+                android:tag="7" />
+
             <ImageView
                 android:id="@+id/img7Rota"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_broken"
-                android:tag="7"
                 android:contentDescription="@string/img7Rota"
-                android:onClick="procesarImagen"/>
+                android:onClick="procesarImagen"
+                android:src="@drawable/ic_broken"
+                android:tag="7" />
         </FrameLayout>
 
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="wrap_content"
+            android:layout_span="2"
+            android:onClick="reiniciarJuego"
+            android:text="@string/btnRestart"
+            />
     </TableRow>
 
 </TableLayout>

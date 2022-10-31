@@ -2,11 +2,16 @@ package com.tianalytics.memorama
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import com.tianalytics.memorama.databinding.ActivityMainBinding
+import java.sql.Time
 import java.util.*
+import java.util.concurrent.TimeUnit
 import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +22,9 @@ class MainActivity : AppCompatActivity() {
 	private var listaImageView = ArrayList<ImageView>()
 	private var listaPosiciones = ArrayList<Int>()
 	private var listaClaseImagen = ArrayList<Imagen>()
+
+	private var imagenUno = Imagen()
+	private var imagenDos = Imagen()
 
 
 	override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,7 +54,9 @@ class MainActivity : AppCompatActivity() {
 
 		ocultarImagenes()
 		cargarPosicionesRandom()
+
 		/**
+		 * @fun mostrarImagenes()
 		 * Nos permite visualizar las imagenes en forma aleatoria
 		 */
 		//mostrarImagenes()
@@ -56,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
 	private fun ocultarImagenes() {
 		for (i in 0..7) {
-			listaImageViewRotas[i].visibility = View.INVISIBLE
+			listaImageViewRotas[i].visibility = View.VISIBLE
 			listaImageView[i].visibility = View.INVISIBLE
 		}
 	}
@@ -133,8 +143,8 @@ class MainActivity : AppCompatActivity() {
 	}
 }
 
-	private fun procesarImagen(imagenView: View){
-		var posicionSeleccionada: Int = imagenView.tag.toString().toInt()
+	 fun procesarImagen(imagenView: View){
+		var posicionSeleccionada:Int = imagenView.tag.toString().toInt()
 		var id:String =imagenView.resources.getResourceEntryName(imagenView.id)
 		/**
 		 * Show images on click
@@ -142,65 +152,103 @@ class MainActivity : AppCompatActivity() {
 		if(imagenView is ImageView){
 			when (id){
 				"img0Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img1Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img2Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img3Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img4Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img5Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img6Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img7Rota" -> {
-					mostrarOcultarImagen(posicionSelecionada,true)
+					mostrarOcultarImagen(posicionSeleccionada,true)
 				}
 				"img0" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img1" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img2" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img3" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img4" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img5" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img6" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 				"img7" -> {
-					mostrarOcultarImagen(posicionSelecionada,false)
+					mostrarOcultarImagen(posicionSeleccionada,false)
 				}
 			}
 		}
+		 asignarImagen(posicionSeleccionada,true)
 	}
 
-	fun mostrarOcultarImagen(posicion:Int,mostrar:Bolean){
+	private fun mostrarOcultarImagen(posicion:Int,mostrar:Boolean){
 		if (mostrar){
-			listaImageViewRotas[i].visibility = View.VISIBLE
-			listaImageView[i].visibility = View.INVISIBLE
+			listaImageViewRotas[posicion].visibility = View.INVISIBLE
+			listaImageView[posicion].visibility = View.VISIBLE
 		}
 		else{
-			listaImageViewRotas[i].visibility = View.INVISIBLE
-			listaImageView[i].visibility = View.VISIBLE
+			listaImageViewRotas[posicion].visibility = View.VISIBLE
+			listaImageView[posicion].visibility = View.INVISIBLE
 		}
+	}
+
+	private fun asignarImagen(posicion: Int,mostrar: Boolean){
+		if (imagenUno.asignada){
+			imagenDos = listaClaseImagen[posicion]
+			imagenDos.posicion = posicion
+			imagenDos.asignada = true
+
+			if(imagenUno.id_vector == imagenDos.id_vector){
+				mostrarMensaje("Seleccionaste el Correcto")
+			}else{
+				mostrarMensaje("Fallaste Intenta de Nuevo")
+				//TimeUnit.SECONDS.sleep(30)
+				Handler(Looper.getMainLooper()).postDelayed({
+				mostrarOcultarImagen(imagenUno.posicion,false)
+				mostrarOcultarImagen(imagenDos.posicion,false)
+				},400)
+
+			}
+			imagenUno.asignada = false
+			imagenDos.asignada = false
+
+		}else{
+			imagenUno = listaClaseImagen[posicion]
+			imagenUno.asignada = true
+			imagenUno.posicion = posicion
+		}
+	}
+
+	private fun mostrarMensaje(msg:String){
+		Toast.makeText(applicationContext,msg,Toast.LENGTH_SHORT).show()
+	}
+
+	private fun reiniciarJuego(view: View){
+		var intent = getIntent()
+		finish()
+		startActivity(intent)
 	}
 }

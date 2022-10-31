@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Memorama</string>
     <string name="texto1">HOLA CHICO</string>
+    <string name="btnRestart">REINICIAR JUEGO</string>
     <string name="img0">Carriola</string>
     <string name="img1">Deck</string>
     <string name="img2">Station</string>
