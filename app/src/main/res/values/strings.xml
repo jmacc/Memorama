@@ -2,14 +2,19 @@
     <string name="app_name">Memorama</string>
     <string name="texto1">HOLA CHICO</string>
     <string name="btnRestart">REINICIAR JUEGO</string>
-    <string name="img0">Carriola</string>
-    <string name="img1">Deck</string>
-    <string name="img2">Station</string>
-    <string name="img3">Transportation</string>
-    <string name="img4">Deck</string>
-    <string name="img5">Deck</string>
-    <string name="img6">Deck</string>
-    <string name="img7">Deck</string>
+    <string name="btnFinalize">FINALIZAR JUEGO</string>
+    <string name="img0">Bullet Bill</string>
+    <string name="img1">Bullet Bill</string>
+    <string name="img2">Boo</string>
+    <string name="img3">Boo</string>
+    <string name="img4">Goomba</string>
+    <string name="img5">Goomba</string>
+    <string name="img6">Luigi Medalla</string>
+    <string name="img7">Luigi Medalla</string>
+    <string name="img8">Peach</string>
+    <string name="img9">Peach</string>
+    <string name="img10">Bowser</string>
+    <string name="img11">Bowser</string>
     <string name="img0Rota">Broken</string>
     <string name="img1Rota">Broken</string>
     <string name="img2Rota">Broken</string>
@@ -18,5 +23,9 @@
     <string name="img5Rota">Broken</string>
     <string name="img6Rota">Broken</string>
     <string name="img7Rota">Broken</string>
+    <string name="img8Rota">Broken</string>
+    <string name="img9Rota">Broken</string>
+    <string name="img10Rota">Broken</string>
+    <string name="img11Rota">Broken</string>
 
 </resources>
