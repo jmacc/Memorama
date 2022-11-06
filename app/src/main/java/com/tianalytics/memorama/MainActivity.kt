@@ -132,22 +132,22 @@ class MainActivity : AppCompatActivity() {
 
 			when (i) {
 				0, 1 -> {
-					idDrawable = R.drawable.bala
+					idDrawable = R.drawable.bullet_bill
 				}
 				2, 3 -> {
-					idDrawable = R.drawable.fantasma
+					idDrawable = R.drawable.boo
 				}
 				4, 5 -> {
-					idDrawable = R.drawable.hongo
+					idDrawable = R.drawable.goomba
 				}
 				6, 7 -> {
-					idDrawable = R.drawable.luigimedalla
+					idDrawable = R.drawable.luigi_medalla
 				}
 				8, 9 -> {
-					idDrawable = R.drawable.princesa
+					idDrawable = R.drawable.peach
 				}
 				10, 11 -> {
-					idDrawable = R.drawable.tortugamala
+					idDrawable = R.drawable.bowser
 				}
 			}
 		/**

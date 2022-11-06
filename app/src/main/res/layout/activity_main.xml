@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/watercolor_background"
-    android:padding="8dp"
+    android:background="@drawable/fondo_colores"
+    android:padding="13dp"
     android:stretchColumns="*"
     tools:context=".MainActivity">
 
@@ -17,17 +17,18 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img0"
-                android:src="@drawable/Bala"
+                android:src="@drawable/bullet_bill"
                 android:tag="0" />
 
             <ImageView
                 android:id="@+id/img0Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img0Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
-                android:tag="0" />
+                android:src="@drawable/carta_trasera"
+                android:tag="0"
+                tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
         </FrameLayout>
 
         <FrameLayout>
@@ -37,16 +38,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img1"
-                android:src="@drawable/Bala"
+                android:src="@drawable/bullet_bill"
                 android:tag="1" />
 
             <ImageView
                 android:id="@+id/img1Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img1Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="1" />
         </FrameLayout>
     </TableRow>
@@ -60,16 +61,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img2"
-                android:src="@drawable/Fantasma"
+                android:src="@drawable/boo"
                 android:tag="2" />
 
             <ImageView
                 android:id="@+id/img2Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img2Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="2" />
         </FrameLayout>
 
@@ -80,16 +81,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img3"
-                android:src="@drawable/Fantasma"
+                android:src="@drawable/boo"
                 android:tag="3" />
 
             <ImageView
                 android:id="@+id/img3Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img3Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="3" />
         </FrameLayout>
 
@@ -104,16 +105,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img4"
-                android:src="@drawable/Hongo"
+                android:src="@drawable/goomba"
                 android:tag="4" />
 
             <ImageView
                 android:id="@+id/img4Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img4Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="4" />
         </FrameLayout>
 
@@ -124,22 +125,23 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img5"
-                android:src="@drawable/Hongo"
+                android:src="@drawable/goomba"
                 android:tag="5" />
 
             <ImageView
                 android:id="@+id/img5Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img5Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="5" />
         </FrameLayout>
 
     </TableRow>
 
     <TableRow>
+
         <FrameLayout>
 
             <ImageView
@@ -147,16 +149,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img6"
-                android:src="@drawable/LuigiMedalla"
+                android:src="@drawable/luigi_medalla"
                 android:tag="6" />
 
             <ImageView
                 android:id="@+id/img6Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img6Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="6" />
         </FrameLayout>
 
@@ -167,21 +169,22 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img7"
-                android:src="@drawable/LuigiMedalla"
+                android:src="@drawable/luigi_medalla"
                 android:tag="7" />
 
             <ImageView
                 android:id="@+id/img7Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img7Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="7" />
         </FrameLayout>
     </TableRow>
 
     <TableRow>
+
         <FrameLayout>
 
             <ImageView
@@ -189,16 +192,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img8"
-                android:src="@drawable/Princesa"
+                android:src="@drawable/peach"
                 android:tag="8" />
 
             <ImageView
                 android:id="@+id/img8Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img6Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="8" />
         </FrameLayout>
 
@@ -209,21 +212,22 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img9"
-                android:src="@drawable/Princesa"
+                android:src="@drawable/peach"
                 android:tag="9" />
 
             <ImageView
                 android:id="@+id/img9Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img7Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="9" />
         </FrameLayout>
     </TableRow>
 
     <TableRow>
+
         <FrameLayout>
 
             <ImageView
@@ -231,16 +235,16 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img10"
-                android:src="@drawable/TortugaMala"
+                android:src="@drawable/bowser"
                 android:tag="10" />
 
             <ImageView
                 android:id="@+id/img10Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img6Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="10" />
         </FrameLayout>
 
@@ -251,21 +255,22 @@
                 android:layout_width="90dp"
                 android:layout_height="90dp"
                 android:contentDescription="@string/img11"
-                android:src="@drawable/TortugaMala"
+                android:src="@drawable/bowser"
                 android:tag="11" />
 
             <ImageView
                 android:id="@+id/img11Rota"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:contentDescription="@string/img7Rota"
                 android:onClick="procesarImagen"
-                android:src="@drawable/ic_broken"
+                android:src="@drawable/carta_trasera"
                 android:tag="11" />
         </FrameLayout>
     </TableRow>
 
     <TableRow>
+
         <Button
             android:id="@+id/btnRestart"
             android:layout_width="wrap_content"
@@ -273,6 +278,7 @@
             android:onClick="reiniciarJuego"
             android:text="@string/btnRestart" />
     </TableRow>
+
     <TableRow>
 
         <Button
